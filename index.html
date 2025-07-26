@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyanshu_Portflio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(188, 188, 247);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .leftsection button {
+            padding: 43px 0;
+        }
+
+        .leftsection .btn {
+            background-color: rgb(18, 18, 62);
+            padding: 12px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
+        .rightsection {
+            width: 80%;
+
+        }
+
+        .purple {
+            color: rgb(139, 111, 165);
+        }
+
+        #element {
+            color: rgb(139, 111, 165);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondsection .box {
+            background-color: white;
+            width: 85vw;
+            height: 2px;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 10vw;
+
+        }
+
+        .image-top {
+            width: 100px;
+            position: relative;
+            top: -40px;
+            left: -44px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 20px;
+            left: -11px;
+            width: 22vw;
+            font-size: 22px;
+        }
+
+        .vertical-Date {
+            position: relative;
+            top: 15px;
+            left: -11px;
+            width: 15vw;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .vertical-doc {
+            position: relative;
+            color: gray;
+            top: 30px;
+            left: -11px;
+            width: 15vw;
+            font-size: 15px;
+
+        }
+
+        .vertical-doc ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 70vh;
+        }
+
+        .thirdsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .thirdsection .box1 {
+            background-color: white;
+            width: 70vw;
+            height: 2px;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .thirdsection .education {
+            height: 330px;
+            width: 3px;
+            background-color: white;
+            margin-top: 0px;
+        }
+
+        .thirdsection .school {
+            background-color: white;
+            width: 2.5vw;
+            height: 2px;
+            display: flex;
+            margin: 80px 0;
+        }
+
+
+
+
+        .box1-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .box1-icon {
+            position: relative;
+            top: 71px;
+            left: -12px;
+            width: 15px;
+            height: 13px;
+            background-color: #9c97f1;
+            border-radius: 85%;
+            border: 3px solid #9c97f1;
+            box-shadow: 0 0 0 2px #9c97f1;
+        }
+
+
+        .box1-content {
+            background: #060430;
+            padding: 15px 20px;
+            border: 1px solid #9c97f1;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(132, 106, 106, 0.05);
+            width: 60vw;
+            margin: 31px 50px;
+        }
+
+        .box1-content .date {
+            color: white;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            font-size: 14px;
+        }
+
+        .box1-content h3 {
+            margin: 0 0 20px 0;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .box1-content h2 {
+            margin: 0 0 10px 0;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .box1-content p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+
+
+        .fourthsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .fourthsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .fourthsection .box2 {
+            background-color: white;
+            width: 65vw;
+            height: 2px;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .fourthsection .vertical1 {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 15vw;
+
+        }
+
+        .image-top1 {
+            width: 100px;
+            position: relative;
+            top: -40px;
+            left: -44px;
+        }
+
+        .vertical-title1 {
+            position: relative;
+            top: 66px;
+            left: -11px;
+            width: 22vw;
+            font-size: 22px;
+        }
+
+        .vertical-Date1 {
+            position: relative;
+            top: 65px;
+            left: -11px;
+            width: 15vw;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .vertical-doc1 {
+            position: relative;
+            color: gray;
+            top: 72px;
+            left: -11px;
+            width: 15vw;
+            font-size: 15px;
+
+        }
+
+        .vertical-doc1 ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .firstsection {
+                flex-direction: column;
+            }
+
+            .leftsection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+            }
+
+            .rightsection {
+                width: 600px !important;
+            }
+
+            .box,
+            .box2 {
+                flex-direction: column;
+            }
+
+            .secondsection .vertical {
+                height: unset;
+            }
+
+            .secondsection {
+                height: 170vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .vertical-title,
+            .vertical-doc,
+            .vertical-Date,
+            .vertical-title1,
+            .vertical-doc1,
+            .vertical-Date1 {
+                left: 40px;
+                width: 300px;
+            }
+
+            .secondsection .box {
+                width: 50vw;
+            }
+
+            .fourthsection .vertical1 {
+                height: unset;
+            }
+
+            .fourthsection .box2 {
+                width: 50vw;
+            }
+
+            .fourthsection {
+                height: 120vh;
+            }
+            .thirdsection{
+                height: 95vh;
+            }
+            .image-top{
+                top: auto;
+            }
+
+            nav {
+                flex-direction: column;
+                width: 110%;
+            }
+
+            footer {
+                display: none;
+            }
+            body{
+                min-width: fit-content;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Dvyanshu's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="firstsection">
+            <div class="leftsection">Hi, My name is <span class="purple">Divyanshu Sharma</span>
+                <div>and I am a passionate</div>
+                <!-- <div>Data Analyst</div> -->
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Resume</button>
+                    <button class="btn">Github</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="thirdsection">
+            <h1>Education Qualification</h1>
+            <div class="box1">
+                <div class="education">
+                    <!-- <div class="school"><span>High School</span></div>
+                    <div class="school"><span>High School</span></div>
+                    <div class="school"><span>High School</span></div> -->
+
+                </div>
+                <div class="box1-item">
+                    <div class="box1-icon"></div>
+                    <div class="box1-content">
+                        <p class="date">2022 - 2026</p>
+                        <h3>Integrated Master's in Physics</h3>
+                        <h2>Birla Institute of Technology and Science, Pilani</h2>
+
+                    </div>
+                    <div class="box1-item">
+                        <div class="box1-icon"></div>
+                        <div class="box1-content">
+                            <p class="date">2022 - 2026</p>
+                            <h3>Finance(minor)</h3>
+                            <h2>Birla Institute of Technology and Science, Pilani</h2>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far...</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="new.png" alt="">
+                    <div class="vertical-title">Web Developer-(BITS)</div>
+                    <div class="vertical-Date">(Aug 2024-Dec 2024)</div>
+                    <div class="vertical-doc">
+                        <ul>
+                            <li>Assisted in web development and database management for 3+ BITS platforms.</li>
+                            <li>Developed and integrated AI-powered voiceovers for 10+ tutorial videos, enhancing
+                                accessibility and engagement by 40-50%.</li>
+                            <li>Contributed to optimizing BITS sites, improving functionality and user experience for
+                                5,000+
+                                students</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="new.png" alt="">
+                    <div class="vertical-title">Summer Intern-(Ultratech)</div>
+                    <div class="vertical-Date">(May 2024-July 2024)</div>
+                    <div class="vertical-doc">
+                        <ul>
+                            <li>Conducted cost analysis and reduction strategies for material balancing and handling in
+                                Ultratech's process department..</li>
+                            <li>Suggested ideas for improving fuel efficiency handling, leading to an overall cost
+                                reduction
+                                of 4%.</li>
+                            <li>Proposed the use of petcock instead of coal due to its higher calorific value by 20-30%,
+                                lower cost, and reduced waste generation.</li>
+                            <li>Evaluated and recommended alternative fuels to enhance economic and environmental
+                                performance.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="new.png" alt="">
+                    <div class="vertical-title">Teaching Assistant-AUGSD(BITS)</div>
+                    <div class="vertical-Date">(Aug 2023-May 2024)</div>
+                    <div class="vertical-doc">
+                        <ul>
+                            <li>Served as a teaching assistant in the AUGSD department at BITS Pilani, managing
+                                students'
+                                documentation.</li>
+                            <li>Responsible for maintenance and distribution of academic records of 5000+ students of
+                                (PhD,
+                                HD, FD).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            </div>
+        </section>
+        <hr>
+
+
+
+        <section class="fourthsection">
+            <h1>Extra Curricular Activities</h1>
+            <div class="box2">
+                <div class="vertical1">
+                    <img class="image-top1" src="" alt="">
+                    <div class="vertical-title1">Art and Deco. Project Lead</div>
+                    <div class="vertical-Date1">Department Sports, Design and Publicity</div>
+                    <div class="vertical-doc1">
+                        <ul>
+                            <li>Conceptualized and executed art & deco. project of Bitmoji of six popular sports
+                                players, resulting in a 30% increase in event engagement and participation.</li>
+                            <li>Led a team of 12 artists and volunteers, coordinating efforts to create visually
+                                stunning and interactive art installations.</li>
+                            <li>Managed a budget of 50,000, ensuring timely completion within financial constraints.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical1">
+                    <img class="image-top1" src="" alt="">
+                    <div class="vertical-title1">Volunteer(Social-Service)</div>
+                    <div class="vertical-Date1">Pilani Atmanirbhar Resource Center(PARC)</div>
+                    <div class="vertical-doc1">
+                        <ul>
+                            <li>Worked with BITS Pilani alumni in an initiative aimed at empowering socially
+                                disadvantaged communities through skill development programs for youth.</li>
+                            <li>Assisted in organizing and analyzing the impact of programs focused on healthcare and
+                                safety for women and senior citizens.</li>
+                    </div>
+                </div>
+
+
+            </div>
+            </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                Divyanshu's Portfolio
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'Data Analyst', 'Business Analyst', 'Financial Analyst'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
